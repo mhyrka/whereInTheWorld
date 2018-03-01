@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img[src="chest.png"], img[src="start.png"] {
+  height: 100px;
+}
+body, html {
+  height: 100%;
+}
+h1 {
+  font-size: 70px;
+}
+button {
+  font-size: 40px;
+}
+.middle {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  width: 100%;
+}
+p, h2 {
+  font-size: 25px;
+}
+h2, p {
+  color: #66FCF1;
+}
