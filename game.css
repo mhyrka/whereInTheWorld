@@ -18,12 +18,18 @@ header {
 main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   width: 100vw;
   min-height: 60vh;
+  /* position: relative; */
+
 }
 main > * {
   width: 50%;
+  margin: 25px;
+}
+main > .clues {
+  position: relative;
 }
 .choices {
   display: flex;
@@ -33,4 +39,11 @@ main > * {
 }
 .choices > * {
   width: 20vw;
+}
+
+button {
+  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
