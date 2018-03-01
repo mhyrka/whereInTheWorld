@@ -1,7 +1,14 @@
 const places = [
   {
     buckinghamPalace: {
-      landmark: "Buckingham Palace",
+      landmark: {
+        name: "Buckingham Palace",
+        choices: ['Big Ben', 'Tower of London', 'Westminster Abbey', 'Buckingham Palace'],
+        clue: ["Edward the Confessor owned the village that stood there before the Norman Conquest",
+               "George III paid £21,000 (£3m now) to buy it for his wife Queen Charlotte who gave birth to all but one of their 15 children there.",
+               "There are 1,514 doors and 760 windows. The windows are cleaned every six weeks"
+               ]
+      },
       continent: {
         name: "Europe",
         choices: ["North America", "South America", "Europe", "Asia", "Africa", "Australia", "Antarctica"],
@@ -27,10 +34,10 @@ const places = [
       city: {
         name: "London",
         choices: ["London", "Liverpool", "Leeds", "Birmingham"],
-        clue: ["previously called Ludenwic",
+        clue: ["over 300 languages are spoken here",
                "6th most expensive city in the world",
                "home to 20 subterranean rivers",
-               "over 300 languages are spoken here"]
+               "previously called Ludenwic"]
       }
     }
   }
