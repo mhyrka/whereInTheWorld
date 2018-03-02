@@ -7,7 +7,6 @@ let currentClue = 0;
 
 function displayClue() {
   let clueSection = document.querySelector('.clues');
-
   let clueDiv = document.createElement('div');
   clueDiv.classList.add('clue');
   clueDiv.textContent = currentLandmark[rounds[currentRound]].clue[currentClue];
@@ -30,8 +29,6 @@ function displayChoices() {
     choiceDiv.classList.add('choice');
     choices.appendChild(choiceDiv);
     addClickListener(choiceDiv);
-    // choiceDiv.addEventListener('click', guess)
-    // console.log(choiceDiv);
   }
 
 }
@@ -41,8 +38,6 @@ function addClickListener(element){
     guess(element)
   })
 }
-
-
 
 function guess(element) {
   if (element.textContent === 'Buckingham Palace') {
@@ -73,8 +68,9 @@ function guess(element) {
     document.getElementById(element.id).textContent = ""
     element.style.backgroundImage = "url(X.png)";
     element.style.backgroundRepeat = "no-repeat";
-    element.style.backgroundSize = "cover";
-    
+    element.style.backgroundSize = "contain";
+    element.style.backgroundPosition = "center";
+
   }
 
 
